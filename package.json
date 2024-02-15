@@ -1,6 +1,7 @@
 {
     "name": "map",
     "version": "0.1.0",
+    "homepage": "https://arekafung.github.io/mindmap-alpha",
     "private": true,
     "dependencies": {
         "@dagrejs/dagre": "^1.0.4",
