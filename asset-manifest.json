@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6954e40.css",
-    "main.js": "/static/js/main.4c4c9250.js",
-    "static/media/roadmap.jpeg": "/static/media/roadmap.f87e4ebf8e564752356e.jpeg",
-    "static/media/areka_selfie.jpeg": "/static/media/areka_selfie.b0e5d809b80dd082d5ab.jpeg",
-    "static/media/github.svg": "/static/media/github.64ffa2332465b3d306f4b12fa01f2ae6.svg",
-    "static/media/google.svg": "/static/media/google.85078161c85c9374b18a7212c53637ae.svg",
-    "static/media/instagram.svg": "/static/media/instagram.51287c6ab100fb09fdd1813beb4e1e2f.svg",
-    "index.html": "/index.html",
-    "static/media/left-arrow.svg": "/static/media/left-arrow.aa282714f07a5c3e6666f7a0c3c9d83d.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.719aa9cc18e0f0f8c6ecbb0fef98b720.svg",
-    "static/media/right-arrow.svg": "/static/media/right-arrow.7a1b0dd5ea10bbcb37c3e4466f370feb.svg",
-    "main.f6954e40.css.map": "/static/css/main.f6954e40.css.map",
-    "main.4c4c9250.js.map": "/static/js/main.4c4c9250.js.map"
+    "main.css": "/mindmap-alpha/static/css/main.f6954e40.css",
+    "main.js": "/mindmap-alpha/static/js/main.ee182c4f.js",
+    "static/media/roadmap.jpeg": "/mindmap-alpha/static/media/roadmap.f87e4ebf8e564752356e.jpeg",
+    "static/media/areka_selfie.jpeg": "/mindmap-alpha/static/media/areka_selfie.b0e5d809b80dd082d5ab.jpeg",
+    "static/media/github.svg": "/mindmap-alpha/static/media/github.64ffa2332465b3d306f4b12fa01f2ae6.svg",
+    "static/media/google.svg": "/mindmap-alpha/static/media/google.85078161c85c9374b18a7212c53637ae.svg",
+    "static/media/instagram.svg": "/mindmap-alpha/static/media/instagram.51287c6ab100fb09fdd1813beb4e1e2f.svg",
+    "index.html": "/mindmap-alpha/index.html",
+    "static/media/left-arrow.svg": "/mindmap-alpha/static/media/left-arrow.aa282714f07a5c3e6666f7a0c3c9d83d.svg",
+    "static/media/linkedin.svg": "/mindmap-alpha/static/media/linkedin.719aa9cc18e0f0f8c6ecbb0fef98b720.svg",
+    "static/media/right-arrow.svg": "/mindmap-alpha/static/media/right-arrow.7a1b0dd5ea10bbcb37c3e4466f370feb.svg",
+    "main.f6954e40.css.map": "/mindmap-alpha/static/css/main.f6954e40.css.map",
+    "main.ee182c4f.js.map": "/mindmap-alpha/static/js/main.ee182c4f.js.map"
   },
   "entrypoints": [
     "static/css/main.f6954e40.css",
-    "static/js/main.4c4c9250.js"
+    "static/js/main.ee182c4f.js"
   ]
 }
