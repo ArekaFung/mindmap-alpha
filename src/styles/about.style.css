@@ -1,0 +1,169 @@
+.about-container {
+    background-color:#1b263d;
+}
+
+.about-container .intro-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container .intro-section .intro-section-right {
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.about-container .intro-section .intro-section-right .picture-wrapper {
+    
+}
+
+.about-container .intro-section .intro-section-right .picture-wrapper .picture{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.about-container .intro-section .intro-section-left {
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container .intro-section .intro-section-left .welcome {
+    font-size: 18px;
+    color:#EAB308;
+}
+
+.about-container .intro-section .intro-section-left .name {
+    font-size: 80px;
+    color:rgb(255, 255, 255);
+}
+
+.about-container .intro-section .intro-section-left .description-wrapper {
+    font-size: 16px;
+    color:#6B7280;
+    word-wrap:break-word;
+}
+
+.about-container .intro-section .intro-section-left .contact-list {
+    padding: 20px 0;
+}
+
+.icon {
+    padding: 10px;
+    width: 50px;
+}
+
+.about-container .intro-section .intro-section-left .letgo-btn {
+    width: 160px;
+    height: 70px;
+    background-color: rgb(248, 173, 35);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.about-container .intro-section .intro-section-left .letgo-btn .text {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.about-container .skillset-container {
+    width: 100vw;
+    height: 80vh;
+    background-color: #020617;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-container .skillset-container .title-raw {
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-container .skillset-container .title-color {
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(219, 152, 37);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-container .skillset-container .box-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+
+.about-container .skillset-container .box {
+    width: 25%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    background-color: #111827;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgb(71, 93, 93);
+}
+
+.about-container .skillset-container .box .header{
+    font-size: 26px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color:rgb(248, 173, 35);
+}
+
+.about-container .skillset-container .box .description{
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 18px;
+    color:#d0d0d0;
+    padding: 8px
+}
+
+.about-container .skillset-container .box .description .details{
+    font-size: 14px;
+    color:#898989;
+}
+
+.about-container .roadmap-container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-container .roadmap-container .title-raw {
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-container .roadmap-container .title-color {
+    font-size: 60px;
+    font-weight: bold;
+    color:rgb(219, 152, 37);
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-container .roadmap-container .roadmap-banner {
+    width: 1000px;
+}
