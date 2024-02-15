@@ -49,7 +49,7 @@ function About() {
                 </div>
             </div>
             <div className='skillset-container'>
-                <span className='title-color'>Someting<span className='title-raw'>about ME</span></span>
+                <span className='title-color'>Something<span className='title-raw'>about ME</span></span>
                 <div className='box-wrapper'>
                     <div className='box'>
                         <img class="icon" src={frontendIcon} />
