@@ -10,7 +10,7 @@ import { SelectorMap, FlowMap } from './FlowMap.js'
 const List = () => {
     return (
         <>
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', textAlign:'center' }}>
                 <SelectorMap />
                 <FlowMap />
             </div>
