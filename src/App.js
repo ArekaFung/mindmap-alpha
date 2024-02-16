@@ -12,8 +12,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<About />} />
-                <Route path="/map" element={<MapPage />} />
+                <Route path="/" element={<MapPage />} />
+                <Route path="/about-me" element={<About />} />
                 <Route
                     path="*"
                     element={<Navigate to="/" replace />}

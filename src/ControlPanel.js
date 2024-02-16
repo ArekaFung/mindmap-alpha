@@ -132,7 +132,7 @@ const ControlPanel = () => {
                                         <span>SIGN IN</span>
                                     </div>
                             }
-                            <div className='btn' onClick={() => navigate('/')}><span>RETURN</span></div>
+                            <div className='btn' onClick={() => navigate('/about-me')}><span>ABOUT ME</span></div>
                         </>
                 }
             </div >
