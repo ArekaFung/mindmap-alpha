@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mindmap-alpha/static/css/main.f6954e40.css",
-    "main.js": "/mindmap-alpha/static/js/main.9719f609.js",
+    "main.js": "/mindmap-alpha/static/js/main.bfd43515.js",
     "static/media/roadmap.jpeg": "/mindmap-alpha/static/media/roadmap.f87e4ebf8e564752356e.jpeg",
     "static/media/areka_selfie.jpeg": "/mindmap-alpha/static/media/areka_selfie.b0e5d809b80dd082d5ab.jpeg",
     "static/media/github.svg": "/mindmap-alpha/static/media/github.64ffa2332465b3d306f4b12fa01f2ae6.svg",
@@ -12,10 +12,10 @@
     "static/media/linkedin.svg": "/mindmap-alpha/static/media/linkedin.719aa9cc18e0f0f8c6ecbb0fef98b720.svg",
     "static/media/right-arrow.svg": "/mindmap-alpha/static/media/right-arrow.7a1b0dd5ea10bbcb37c3e4466f370feb.svg",
     "main.f6954e40.css.map": "/mindmap-alpha/static/css/main.f6954e40.css.map",
-    "main.9719f609.js.map": "/mindmap-alpha/static/js/main.9719f609.js.map"
+    "main.bfd43515.js.map": "/mindmap-alpha/static/js/main.bfd43515.js.map"
   },
   "entrypoints": [
     "static/css/main.f6954e40.css",
-    "static/js/main.9719f609.js"
+    "static/js/main.bfd43515.js"
   ]
 }
