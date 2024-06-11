@@ -9,7 +9,9 @@ import Tab from '@mui/material/Tab';
 import '~/assets/css/ControlPanel.scss';
 import '~/assets/css/Login.scss';
 
-
+import LEFT_ARROW from '~/assets/images/left-arrow.svg'
+import RIGHT_ARROW from '~/assets/images/right-arrow.svg'
+import GOOGLE_ICON from '~/assets/images/google.svg'
 
 import { useBoardStoreProps } from "~/store/boardStore";
 import { useUserStore } from "~/store/userStore";
@@ -70,13 +72,13 @@ const ControlPanel = () => {
                     isCollapseMenu ?
                         <>
                             <div className='icon-wrapper' onClick={toggleCollapseMenu}>
-                                <img className='arrow-left-icon' src='./images/left-arrow.svg' />
+                                <img className='arrow-left-icon' src={LEFT_ARROW} />
                                 <span>Menu</span>
                             </div>
                         </> :
                         <>
                             <div className='icon-wrapper' onClick={toggleCollapseMenu}>
-                                <img className='arrow-right-icon' src='./images/right-arrow.svg' />
+                                <img className='arrow-right-icon' src={RIGHT_ARROW} />
                             </div>
                             {
                                 userData !== null ?
@@ -98,12 +100,12 @@ const ControlPanel = () => {
                                         setBoardTitle('')
                                         setAction(null, 'sign in with google', null, 'Maintain')
                                     }} style={{ display: "flex", alignItems: "center" }}>
-                                        <img className='google-icon' src='./images/google.svg' alt='GOOGLE_ICON' />
+                                        <img className='google-icon' src={GOOGLE_ICON} alt='GOOGLE_ICON' />
                                         <span>SIGN IN</span>
                                     </div>
                             }
                             <div className='btn' onClick={() => setAction(null, 'regen main map', null, 'Maintain')}><span>REGEN</span></div>
-                            <div className='btn' onClick={() => navigate('/mindmap-alpha/about-me')}><span>RETURN</span></div>
+                            <div className='btn' onClick={() => navigate('/about-me')}><span>RETURN</span></div>
                         </>
                 }
             </div >
@@ -113,13 +115,13 @@ const ControlPanel = () => {
                         isCollapseBoard ?
                             <>
                                 <div className='icon-wrapper' onClick={toggleCollapseBoard}>
-                                    <img className='arrow-left-icon' src='./images/left-arrow.svg' />
+                                    <img className='arrow-left-icon' src={LEFT_ARROW} />
                                     <span>Board</span>
                                 </div>
                             </> :
                             <>
                                 <div className='icon-wrapper' onClick={toggleCollapseBoard}>
-                                    <img className='arrow-right-icon' src='./images/right-arrow.svg' />
+                                    <img className='arrow-right-icon' src={RIGHT_ARROW} />
                                 </div>
                                 <div className='btn' onClick={() => {
                                     setAction(null, 'add board', { boardTitle: boardTitle }, 'Maintain')

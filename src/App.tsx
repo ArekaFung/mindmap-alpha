@@ -13,11 +13,11 @@ function App() {
             <div className='app-container'>
                 <BrowserRouter>
                     <Routes>
-                        <Route path="/mindmap-alpha/mind-map" element={<MapPage />} />
-                        <Route path="/mindmap-alpha/about-me" element={<AboutMePage />} />
+                        <Route path="/mind-map" element={<MapPage />} />
+                        <Route path="/about-me" element={<AboutMePage />} />
                         <Route
                             path="*"
-                            element={<Navigate to="/mindmap-alpha" replace />}
+                            element={<Navigate to="/mind-map" replace />}
                         />
                     </Routes>
                 </BrowserRouter>

@@ -46,7 +46,7 @@ const AboutMePage = () => {
                         <div className='letgo-btn'>
                             <span className='text' onClick={() => {
                                 setAction(null, 'load user data', null, 'Maintain')
-                                navigate('/mindmap-alpha/mind-map')
+                                navigate('/mind-map')
                             }}>Let's Map!</span>
                         </div>
                         <img style={{ position: "absolute", bottom: "-40px", left: "165px" }} className="icon" src={clickmeIcon} />
