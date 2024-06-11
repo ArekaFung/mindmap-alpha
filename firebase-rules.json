@@ -1,0 +1,24 @@
+{
+    "rules": {
+        ".read": false,
+        ".write": false,
+        "Test": {
+            ".read": true,
+            ".write": false
+        },
+        "Admin": {
+            ".read": true,
+            ".write": false
+        },
+        "Whitelist": {
+            ".read": true,
+            ".write": "root.child('Admin').child(auth.uid).val() !== null"
+        },
+        "UserData": {
+            "$uid": {
+                ".read": "auth !== null && auth.uid === $uid && (root.child('Whitelist').child(auth.uid).val() !== null || root.child('Admin').child(auth.uid).val() !== null)",
+                ".write": "auth !== null && auth.uid === $uid && (root.child('Whitelist').child(auth.uid).val() !== null || root.child('Admin').child(auth.uid).val() !== null)"
+            }
+        }
+    }
+}

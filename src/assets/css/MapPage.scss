@@ -1,0 +1,19 @@
+.flowmap-container {
+    flex: 80%;
+    height: 100vh;
+}
+
+.selectormap-container {
+    box-sizing: border-box;
+    border: solid black 3px;
+    min-width: 316px;
+    height: 100vh;
+}
+
+.queryPanel-container {
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    padding:8px;
+}
