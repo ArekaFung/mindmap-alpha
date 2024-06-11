@@ -103,7 +103,7 @@ const ControlPanel = () => {
                                     </div>
                             }
                             <div className='btn' onClick={() => setAction(null, 'regen main map', null, 'Maintain')}><span>REGEN</span></div>
-                            <div className='btn' onClick={() => navigate('/about-me')}><span>RETURN</span></div>
+                            <div className='btn' onClick={() => navigate('/mindmap-alpha/about-me')}><span>RETURN</span></div>
                         </>
                 }
             </div >
