@@ -78,8 +78,9 @@ const QueryPanel = () => {
 
                         const { inputValue } = params;
                         // Suggest the creation of a new value
-                        const isExisting = options.some((option) => inputValue === option.content);
-                        if (inputValue !== '' && !isExisting) {
+                        // const isExisting = options.some((option) => inputValue === option.content);
+                        // if (inputValue !== '' && !isExisting) {
+                        if (inputValue !== '') {
                             filtered.push({
                                 id: -1,
                                 content: inputValue,
@@ -142,8 +143,7 @@ const QueryPanel = () => {
 
                         const { inputValue } = params;
                         // Suggest the creation of a new value
-                        const isExisting = options.some((option) => inputValue === option.content);
-                        if (inputValue !== '' && !isExisting) {
+                        if (inputValue !== '') {
                             filtered.push({
                                 id: -1,
                                 content: inputValue,
