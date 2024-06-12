@@ -18,7 +18,7 @@ function App() {
                         <Route path="/about-me" element={<AboutMePage />} />
                         <Route
                             path="*"
-                            element={<Navigate to="/" replace={true} />}
+                            element={<Navigate to="/" />}
                         />
                     </Routes>
                 </HashRouter>
