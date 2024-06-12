@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import 'reactflow/dist/style.css';
 import '~/assets/css/App.scss';
@@ -11,16 +11,17 @@ function App() {
     return (
         <>
             <div className='app-container'>
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
+                        <Route path="/" element={<MapPage />} />
                         <Route path="/mind-map" element={<MapPage />} />
                         <Route path="/about-me" element={<AboutMePage />} />
                         <Route
                             path="*"
-                            element={<Navigate to="/mind-map" replace />}
+                            element={<Navigate to="/" replace={true} />}
                         />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </div >
         </>
     );
