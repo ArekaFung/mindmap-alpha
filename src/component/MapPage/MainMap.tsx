@@ -27,6 +27,8 @@ const MainMap = () => {
                     nodeTypes={customNodeTypes}
                     fitView={true}
                     minZoom={0.1}
+                    snapToGrid={true}
+                    snapGrid={[10, 10]}
                     panOnDrag={[0, 1, 2]}>
                     <Controls />
                     <MiniMap />
