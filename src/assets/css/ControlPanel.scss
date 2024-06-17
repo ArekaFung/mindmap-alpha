@@ -29,6 +29,7 @@
 }
 
 .controlPanel-container .btn {
+    height: 24px;
     padding: 10px;
     background-color: cornsilk;
     border-radius: 5px;
@@ -58,4 +59,9 @@
     &:hover {
         cursor: pointer;
     }
+}
+
+.google-icon {
+    width: 22px;
+    margin-right: 6px;
 }

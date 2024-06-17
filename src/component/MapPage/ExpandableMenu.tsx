@@ -7,21 +7,13 @@ interface MenuButtonProps {
     children: React.ReactNode[];
 }
 
-const defaultVariants: Variants = {
-    open: {
-        opacity: 0,
-        display: 'none'
-    },
-    closed: { opacity: 1, display: '' }
-};
-
 const itemVariants: Variants = {
     open: {
         opacity: 1,
         x: 0,
-        transition: { type: "spring", stiffness: 300, damping: 24, duration: 0.2 }
+        transition: { type: "spring", stiffness: 300, damping: 24, duration: 0.1 }
     },
-    closed: { opacity: 0, x: 20, display: 'none', transition: { duration: 0.2 } }
+    closed: { opacity: 0, x: 20, display: 'none', transition: { duration: 0.1 } }
 };
 
 const itemContainer = {
@@ -29,9 +21,8 @@ const itemContainer = {
         transition: {
             type: "spring",
             bounce: 0,
-            delay: 0.1,
-            duration: 0.4,
-            staggerChildren: 0.1
+            duration: 0.2,
+            staggerChildren: 0.05
         }
     }),
     closed: {
@@ -39,8 +30,9 @@ const itemContainer = {
         transition: {
             type: "spring",
             bounce: 0,
-            duration: 0.4,
-            staggerChildren: 0.1
+            delay: 0.1,
+            duration: 0.2,
+            staggerChildren: 0.05
         }
     }
 };
@@ -61,13 +53,14 @@ const displayButton = {
         transition: {
             type: "spring", stiffness: 200, damping: 24,
             duration: 0.2,
-            delay: 0.4,
+            delay: 0.2,
         }
     }
 };
 
 export const ExpandableMenu: React.FC<MenuButtonProps> = ({ classString, label, children }) => {
     const [isOpen, setIsOpen] = useState(false)
+    var keyID = 0
 
     return (
         <>
@@ -86,7 +79,7 @@ export const ExpandableMenu: React.FC<MenuButtonProps> = ({ classString, label, 
                     variants={itemContainer}
                 >
                     {children && children.map(child => {
-                        return <motion.div variants={itemVariants}>{child}</motion.div>
+                        return <motion.div variants={itemVariants} key={keyID++}>{child}</motion.div>
                     })}
                 </motion.div >
             </motion.div >

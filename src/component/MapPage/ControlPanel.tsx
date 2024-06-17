@@ -2,15 +2,11 @@ import React, { useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import '~/assets/css/ControlPanel.scss';
-import '~/assets/css/Login.scss';
 
 import LEFT_ARROW from '~/assets/images/left-arrow.svg'
-import RIGHT_ARROW from '~/assets/images/right-arrow.svg'
 import GOOGLE_ICON from '~/assets/images/google.svg'
 
 import { useBoardStoreProps } from "~/store/boardStore";
@@ -116,7 +112,6 @@ const ControlPanel = () => {
                         setBoardTitle('')
                     }}><span>ADD BOARD</span></div>, <></>, <></>,
                     <TextField
-                        id="outlined-controlled"
                         label="New Board"
                         value={boardTitle}
                         onChange={(event) => {

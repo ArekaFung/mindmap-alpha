@@ -14,6 +14,7 @@ import { useUserStore } from "~/store/userStore";
 
 const MapAppListener = () => {
     const action = useEventActionStore(state => state.action)
+    const setAction = useEventActionStore(state => state.setAction)
     const newTicket = useEventActionStore(state => state.newTicket)
     const eventActionReset = useEventActionStore(state => state.reset)
 
@@ -52,10 +53,25 @@ const MapAppListener = () => {
             }
         }
 
+        const handleCtrlS = (event: KeyboardEvent) => {
+            if ((event.key === 's' || event.key === 'S') && (event.ctrlKey || event.metaKey)) {
+                event.stopImmediatePropagation(); // prevent other event listener to be triggered
+                event.preventDefault();
+                if (event.shiftKey) {
+                    // TODO handle export as png
+                    // https://reactflow.dev/examples/misc/download-image
+                } else {
+                    // handle normal save to firebase
+                    setAction(null, 'save board', null, 'Maintain')
+                }
+            }
+        }
+
 
 
         window.addEventListener('beforeunload', handleBeforeUnload)
         window.addEventListener('keydown', handleCtrlZ)
+        window.addEventListener('keydown', handleCtrlS)
         return () => {
             window.removeEventListener('beforeunload', handleBeforeUnload)
             window.removeEventListener('keydown', handleCtrlZ)
@@ -75,17 +91,21 @@ const MapAppListener = () => {
                             const res = await readInfoList()
                             if (res !== null && res.length > 0) {
                                 res.sort(board => board.id)
+                                console.log("Areka debug 1");
 
                                 // TODO handle scenario of maintaining the state before sign in (instead of completely discard)
                                 // TODO handle local boards?
                                 if (activeBoard !== null || boardNodesToSaveData().uniqueNodeSaveData.nodeArr.length === 0) {
+                                    console.log("Areka debug 2");
                                     setActiveBoard(res[0].id)
                                 }
                                 // setAvailableBoard([...availableBoard, ...res])
+                                console.log("Areka debug 3");
                                 setAvailableBoard(res)
                             } else {
                                 boardReset()
                             }
+                            console.log("Areka debug 4", ticket);
                             eventActionReset(ticket)
                         })()
                     }

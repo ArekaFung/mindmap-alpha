@@ -5,7 +5,6 @@ import '~/assets/css/App.scss';
 
 import MapPage from '~/component/MapPage/MapPage'
 import AboutMePage from '~/component/AboutMePage/AboutMePage'
-import DevListener from '~/listener/DevListener'
 
 function App() {
     return (

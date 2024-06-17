@@ -43,11 +43,11 @@ const AboutMePage = () => {
                         <a target='_blank' href="https://www.instagram.com/areka.forsure" ><img className='icon' src={instagramIcon} /></a>
                     </div>
                     <div style={{ position: "relative" }}>
-                        <div className='letgo-btn'>
-                            <span className='text' onClick={() => {
-                                setAction(null, 'load user data', null, 'Maintain')
-                                navigate('/mind-map')
-                            }}>Let's Map!</span>
+                        <div className='letgo-btn' onClick={() => {
+                            setAction(null, 'load user data', null, 'Maintain')
+                            navigate('/mind-map')
+                        }}>
+                            <span className='text' >Let's Map!</span>
                         </div>
                         <img style={{ position: "absolute", bottom: "-40px", left: "165px" }} className="icon" src={clickmeIcon} />
                     </div>
