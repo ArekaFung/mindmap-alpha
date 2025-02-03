@@ -1,7 +1,8 @@
-
 type PhotoOrientation = 'portrait' | 'landscape'
 
 export interface PhotoMetaData {
+    uuid: String
+
     orientation: PhotoOrientation
     ratio_W: number
     ratio_H: number
@@ -20,7 +21,7 @@ export interface PhotoData {
     base64_original?: String
 }
 
-interface CameraData {
+export interface CameraData {
     cameraBrand: String
     cameraModel: String
     lensBrand: String
