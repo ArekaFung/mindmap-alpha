@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged } from 'firebase/auth'
 
-import { useFirebaseStore } from '~/store/firebase/firebaseStore'
+import { useFirebaseStore } from './firebaseStore'
 import { useUserStore } from '~/store/userStore'
 import { useEventActionStore } from '../eventActionStore'
 

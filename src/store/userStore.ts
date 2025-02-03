@@ -25,3 +25,15 @@ export const useUserStore = create<UserStoreProps>((set, get) => ({
         })
     },
 }))
+
+export const getUID = (): string => {
+    return useUserStore.getState().userData!.uid
+}
+
+export const checkUID = (): boolean => {
+    if (useUserStore.getState().userData?.uid !== undefined) {
+        return true
+    }
+
+    return false
+}

@@ -4,7 +4,7 @@ import {
     Position,
 } from 'reactflow'
 import { IReactFlowNodeDataProps } from './reactFlowProps';
-import { useBoardStoreProps } from '~/store/boardStore'
+import { useBoardStoreProps } from '~/store/MapPage/boardStore'
 import { useEventActionStore } from '~/store/eventActionStore'
 
 // direct use for ReactFlow to define types of nodes

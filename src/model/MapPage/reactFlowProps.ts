@@ -1,6 +1,6 @@
 import { CustomNodeType } from './customNodeTypes'
 import { CustomEdgePropsProps } from './customEdgePropsTypes'
-import { UniqueNode } from './UniqueNode'
+import { UniqueNode } from './uniqueNode'
 
 
 

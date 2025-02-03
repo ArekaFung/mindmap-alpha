@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useBoardStoreProps } from "~/store/boardStore";
+import { useBoardStoreProps } from "~/store/MapPage/boardStore";
 import { useEventActionStore } from "~/store/eventActionStore";
-import { useFirebaseBoardStore } from "~/store/firebase/firebaseBoardStore";
-import { useMainMapStore } from "~/store/mainMapStore";
-import { useSelectorMapStore } from "~/store/selectorMapStore";
-import { useUniqueNodeStore } from "~/store/uniqueNodeStore";
+import { useFirebaseBoardStore } from "~/store/Firebase/firebaseBoardStore";
+import { useMainMapStore } from "~/store/MapPage/mainMapStore";
+import { useSelectorMapStore } from "~/store/MapPage/selectorMapStore";
+import { useUniqueNodeStore } from "~/store/MapPage/uniqueNodeStore";
 import { Node as reactflowNode } from 'reactflow'
 
 // what should this listener do?

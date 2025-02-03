@@ -1,5 +1,5 @@
-import { ColorNodeProps } from '~/model/reactFlowProps'
-import { MainMapSaveData, UniqueNodeSaveData, BoardNodesSaveData } from '~/model/saveDataProps'
+import { ColorNodeProps } from '~/model/MapPage/reactFlowProps'
+import { MainMapSaveData, UniqueNodeSaveData, BoardNodesSaveData } from '~/model/MapPage/saveDataProps'
 
 interface ISaveParser<T> {
     createSaveDataString: (save: T) => string,

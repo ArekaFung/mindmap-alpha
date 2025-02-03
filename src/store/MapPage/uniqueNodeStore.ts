@@ -1,6 +1,6 @@
 import { create } from 'zustand'
-import { UniqueNodeProps, UniqueNode } from '~/model/UniqueNode'
-import { UniqueNodeSaveData } from '~/model/saveDataProps'
+import { UniqueNodeProps, UniqueNode } from '~/model/MapPage/uniqueNode'
+import { UniqueNodeSaveData } from '~/model/MapPage/saveDataProps'
 import { BaseStoreProps, SaveableStoreProps } from '~/store/baseStoreProps'
 import saveParser from '~/util/saveParserUtil'
 

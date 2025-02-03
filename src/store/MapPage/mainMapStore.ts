@@ -1,12 +1,13 @@
 import { create } from 'zustand'
-import { IReactFlowNodeProps } from '~/model/reactFlowProps'
+import { IReactFlowNodeProps } from '~/model/MapPage/reactFlowProps'
 import { nodePadding, spawnNodes, adjustNodesByPadding, getMaxChildHeightRelative } from '~/util/mapStoreUtil'
-import { BaseMapStoreProps, SaveableStoreProps } from '~/store/baseStoreProps'
+import { SaveableStoreProps } from '~/store/baseStoreProps'
+import { BaseMapStoreProps } from '~/store/MapPage/baseMapStoreProps'
 import { applyNodeChanges, NodeChange, Node } from 'reactflow'
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
-import { customEdgePropsTypes } from '~/model/customEdgePropsTypes'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
+import { customEdgePropsTypes } from '~/model/MapPage/customEdgePropsTypes'
 import saveParser from '~/util/saveParserUtil'
-import { MainMapSaveData } from '~/model/saveDataProps'
+import { MainMapSaveData } from '~/model/MapPage/saveDataProps'
 
 interface MainMapStoreProps extends BaseMapStoreProps, SaveableStoreProps<MainMapSaveData> {
     generateMainMap: () => void,

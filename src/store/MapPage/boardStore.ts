@@ -1,8 +1,8 @@
 import { create } from 'zustand'
 import { BaseStoreProps, SaveableStoreProps } from '~/store/baseStoreProps'
-import { useMainMapStore } from '~/store/mainMapStore'
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
-import { BoardInfoSaveData, BoardNodesSaveData } from '~/model/saveDataProps'
+import { useMainMapStore } from '~/store/MapPage/mainMapStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
+import { BoardInfoSaveData, BoardNodesSaveData } from '~/model/MapPage/saveDataProps'
 import saveParser from '~/util/saveParserUtil'
 import { useSelectorMapStore } from './selectorMapStore'
 

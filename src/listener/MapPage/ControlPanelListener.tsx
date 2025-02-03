@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import { useBoardStoreProps } from "~/store/boardStore";
+import { useBoardStoreProps } from "~/store/MapPage/boardStore";
 import { useEventActionStore } from '~/store/eventActionStore'
-import { useFirebaseBoardStore } from "~/store/firebase/firebaseBoardStore";
-import { useFirebaseUserStore } from "~/store/firebase/firebaseUserStore";
-import { useMainMapStore } from "~/store/mainMapStore";
-import { useSelectorMapStore } from "~/store/selectorMapStore";
-import { useUniqueNodeStore } from "~/store/uniqueNodeStore";
+import { useFirebaseBoardStore } from "~/store/Firebase/firebaseBoardStore";
+import { useFirebaseUserStore } from "~/store/Firebase/firebaseUserStore";
+import { useMainMapStore } from "~/store/MapPage/mainMapStore";
+import { useSelectorMapStore } from "~/store/MapPage/selectorMapStore";
+import { useUniqueNodeStore } from "~/store/MapPage/uniqueNodeStore";
 import { useUserStore } from "~/store/userStore";
 
 

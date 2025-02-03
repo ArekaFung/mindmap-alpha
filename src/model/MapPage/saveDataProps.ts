@@ -1,5 +1,5 @@
-import { IReactFlowNodeProps, ReactFlowEdgeProps } from '~/model/reactFlowProps'
-import { UniqueNodeProps } from '~/model/UniqueNode'
+import { IReactFlowNodeProps, ReactFlowEdgeProps } from './reactFlowProps'
+import { UniqueNodeProps } from './uniqueNode'
 
 
 export interface MainMapSaveData {

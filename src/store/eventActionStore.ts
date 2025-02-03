@@ -4,7 +4,7 @@ import { Node } from 'reactflow'
 
 type TicketHandle = 'Maintain' | 'New Ticket' | 'Reset'
 
-interface ActionParamProps {
+interface MapPageActionParamProps {
     nodeArr?: Node[],
     boardID?: number
     boardTitle?: string,
@@ -17,8 +17,8 @@ interface EventActionStoreProps {
     reset: (inTicket?: string) => void //cannot extend normal StoreProps' reset()
     action: ActionTypes
     ticket: string | null
-    actionParam: ActionParamProps | null,
-    setAction: (inTicket: string | null, inAction: ActionTypes, inParma: ActionParamProps | null, ticketHandle: TicketHandle) => string | null
+    actionParam: MapPageActionParamProps | null,
+    setAction: (inTicket: string | null, inAction: ActionTypes, inParma: MapPageActionParamProps | null, ticketHandle: TicketHandle) => string | null
     newTicket: (inTicket: string | null) => string | null
 }
 
@@ -31,7 +31,7 @@ export const useEventActionStore = create<EventActionStoreProps>((set, get) => (
     ticket: null,
     actionParam: null,
 
-    setAction: (inTicket: string | null, inAction: ActionTypes, inParma: ActionParamProps | null, ticketHandle: TicketHandle) => {
+    setAction: (inTicket: string | null, inAction: ActionTypes, inParma: MapPageActionParamProps | null, ticketHandle: TicketHandle) => {
         const currTicket = get().ticket
 
         // allowed scenarios:

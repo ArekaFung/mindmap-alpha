@@ -6,9 +6,9 @@ import ReactFlow, {
     BackgroundVariant,
 } from "reactflow";
 
-import { useMainMapStore } from '~/store/mainMapStore'
-import { customNodeTypes } from "~/model/customNodeTypes";
-import MainMapListener from "~/listener/MainMapListener";
+import { useMainMapStore } from '~/store/MapPage/mainMapStore'
+import { customNodeTypes } from "~/model/MapPage/customNodeTypes";
+import MainMapListener from "~/listener/MapPage/MainMapListener";
 
 const MainMap = () => {
     const spawnedNodes = useMainMapStore(state => state.spawnedNodes)

@@ -1,11 +1,11 @@
 import { Node } from 'reactflow'
 
-import { SpawnRes } from '~/model/commonProps'
-import { IReactFlowNodeProps, IReactFlowNodeDataProps, ColorNodeProps, SelectorNodeProps, ReactFlowEdgeProps } from '~/model/reactFlowProps'
-import { customEdgePropsTypes } from '~/model/customEdgePropsTypes'
-import { CustomNodeType } from '~/model/customNodeTypes'
+import { SpawnRes } from '~/model/MapPage/commonProps'
+import { IReactFlowNodeProps, IReactFlowNodeDataProps, ColorNodeProps, SelectorNodeProps, ReactFlowEdgeProps } from '~/model/MapPage/reactFlowProps'
+import { customEdgePropsTypes } from '~/model/MapPage/customEdgePropsTypes'
+import { CustomNodeType } from '~/model/MapPage/customNodeTypes'
 
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
 
 
 

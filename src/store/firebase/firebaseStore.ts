@@ -36,3 +36,7 @@ export const useFirebaseStore = create<FirebaseStoreProps>((set, get) => ({
     auth: auth,
     provider: provider,
 }))
+
+export const getDbRef = (): DatabaseReference => {
+    return useFirebaseStore.getState().dbRef
+}

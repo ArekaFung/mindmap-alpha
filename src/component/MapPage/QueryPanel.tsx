@@ -7,11 +7,11 @@ import Autocomplete, { createFilterOptions } from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
-import { useSelectorMapStore } from '~/store/selectorMapStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
+import { useSelectorMapStore } from '~/store/MapPage/selectorMapStore'
 import { useEventActionStore } from '~/store/eventActionStore'
 
-import { UniqueNodeProps } from "~/model/UniqueNode";
+import { UniqueNodeProps } from "~/model/MapPage/uniqueNode";
 
 const zoomRate = 0.8
 const filter = createFilterOptions<UniqueNodeProps>();

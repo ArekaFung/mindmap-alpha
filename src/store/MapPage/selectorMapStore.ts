@@ -1,11 +1,11 @@
 import { create } from 'zustand'
-import { IReactFlowNodeProps } from '~/model/reactFlowProps'
+import { IReactFlowNodeProps } from '~/model/MapPage/reactFlowProps'
 import { applyNodeChanges, NodeChange } from 'reactflow'
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
 import { nodePadding, spawnNodes, adjustNodesByPadding, getMaxChildHeightRelative } from '~/util/mapStoreUtil'
-import { UniqueNodeProps } from '~/model/UniqueNode'
-import { BaseMapStoreProps } from '~/store/baseStoreProps'
-import { GenRes } from '~/model/commonProps'
+import { UniqueNodeProps } from '~/model/MapPage/uniqueNode'
+import { BaseMapStoreProps } from '~/store/MapPage/baseMapStoreProps'
+import { GenRes } from '~/model/MapPage/commonProps'
 
 interface SelectorMapStoreProps extends BaseMapStoreProps {
     parentValue: UniqueNodeProps | null,

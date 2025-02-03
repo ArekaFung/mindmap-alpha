@@ -1,11 +1,11 @@
 import { create } from 'zustand'
 import { getDatabase, ref, get as dbGet, set as dbSet, child, DatabaseReference } from 'firebase/database'
 
-import { useFirebaseStore } from '~/store/firebase/firebaseStore'
-import { BoardInfoSaveData, BoardNodesSaveData } from '~/model/saveDataProps'
-import { useUserStore } from '../userStore';
+import { getDbRef } from '~/store/Firebase/firebaseStore'
+import { BoardInfoSaveData, BoardNodesSaveData } from '~/model/MapPage/saveDataProps'
+import { getUID, checkUID } from '../userStore';
 import { checkNotUndefinedNotNull, softCheckNotUndefinedNotNull } from '~/util/firebaseUtil';
-import { UniqueNode, UniqueNodeProps } from '~/model/UniqueNode';
+import { UniqueNode, UniqueNodeProps } from '~/model/MapPage/uniqueNode';
 
 interface FirebaseBoardProps {
     readInfoList: () => Promise<BoardInfoSaveData[] | null>
@@ -199,20 +199,4 @@ export const useFirebaseBoardStore = create<FirebaseBoardProps>((set, get) => ({
 
 
 
-const getDbRef = (): DatabaseReference => {
-    return useFirebaseStore.getState().dbRef
-}
-
-
-const getUID = (): string => {
-    return useUserStore.getState().userData!.uid
-}
-
-const checkUID = (): boolean => {
-    if (useUserStore.getState().userData?.uid !== undefined) {
-        return true
-    }
-
-    return false
-}
 

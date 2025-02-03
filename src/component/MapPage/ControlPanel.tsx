@@ -9,10 +9,10 @@ import '~/assets/css/ControlPanel.scss';
 import LEFT_ARROW from '~/assets/images/left-arrow.svg'
 import GOOGLE_ICON from '~/assets/images/google.svg'
 
-import { useBoardStoreProps } from "~/store/boardStore";
+import { useBoardStoreProps } from "~/store/MapPage/boardStore";
 import { useUserStore } from "~/store/userStore";
 import { useEventActionStore } from '~/store/eventActionStore';
-import ControlPanelListener from '~/listener/ControlPanelListener';
+import ControlPanelListener from '~/listener/MapPage/ControlPanelListener';
 
 import { ExpandableMenu } from "./ExpandableMenu";
 

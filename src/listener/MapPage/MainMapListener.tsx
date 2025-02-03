@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
-import { useMainMapStore } from '~/store/mainMapStore'
-import { useSelectorMapStore } from '~/store/selectorMapStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
+import { useMainMapStore } from '~/store/MapPage/mainMapStore'
+import { useSelectorMapStore } from '~/store/MapPage/selectorMapStore'
 import { useEventActionStore } from '~/store/eventActionStore'
 import { useReactFlow } from "reactflow";
-import { useBoardStoreProps } from "~/store/boardStore";
+import { useBoardStoreProps } from "~/store/MapPage/boardStore";
 
 
 const MainMapListener = () => {

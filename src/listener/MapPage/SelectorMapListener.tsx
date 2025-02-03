@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useUniqueNodeStore } from '~/store/uniqueNodeStore'
-import { useSelectorMapStore } from '~/store/selectorMapStore'
+import { useUniqueNodeStore } from '~/store/MapPage/uniqueNodeStore'
+import { useSelectorMapStore } from '~/store/MapPage/selectorMapStore'
 import { useEventActionStore } from '~/store/eventActionStore'
 
 const SelectorMapListener = () => {
