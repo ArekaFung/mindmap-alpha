@@ -1,0 +1,67 @@
+.controlPanel-container {
+    background-color: bisque;
+    position: fixed;
+    z-index: 1;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px rgb(148, 145, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controlPanel-container-menu {
+    top: 15px;
+    right: 15px;
+}
+
+.controlPanel-container-board {
+    top: 100px;
+    right: 15px;
+}
+
+.controlPanel-container-display {
+    z-index: 2;
+}
+
+.controlPanel-container span {
+    font-size: 20px;
+}
+
+.controlPanel-container .btn {
+    height: 24px;
+    padding: 10px;
+    background-color: cornsilk;
+    border-radius: 5px;
+    margin-left: 10px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.controlPanel-container .arrow-right-icon {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+
+}
+
+.controlPanel-container .arrow-left-icon {
+    width: 15px;
+    height: 15px;
+    align-items: center;
+
+}
+
+.icon-wrapper {
+    padding:10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.google-icon {
+    width: 22px;
+    margin-right: 6px;
+}

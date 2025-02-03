@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+
+.app-container{
+    text-align: center;
+}
+
+.mappage-container{
+    display: flex;
+}
+
+
+.my-custom-node {
+    font-size: 16px;
+    min-height: 20px;
+    min-width: 120px;
+    max-width: 180px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.my-custom-node-mono{
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+.my-custom-node-color--1{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+.my-custom-node-color-0{
+    background: rgb(254, 104, 104);
+}
+.my-custom-node-color-1{
+    background: rgb(255, 156, 50);
+}
+.my-custom-node-color-2{
+    background: rgb(255, 252, 50);
+}
+.my-custom-node-color-3{
+    background: rgb(50, 255, 152);
+}
+.my-custom-node-color-4{
+    background: rgb(71, 192, 248);
+}
+.my-custom-node-color-5{
+    background: rgb(241, 112, 255);
+}
+.my-custom-node-color-6{
+    background: rgb(139, 113, 241);
+}
