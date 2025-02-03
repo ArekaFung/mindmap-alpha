@@ -35,3 +35,62 @@
 
 -   if node move pass x = 0 (ie from right to left or vice-versa)
     -   rescursively change all child nodes' x to -x (or vice-versa)
+
+
+
+// 20250203
+Google Maps API
+https://developers.google.com/maps/documentation/javascript/places
+Google Maps API (example)
+https://developers.google.com/maps/documentation/javascript/examples/place-search
+
+//sample code from POE for Google Maps API
+//html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Example</title>
+    <style>
+        #map {
+            height: 400px; /* Set the height of the map */
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to Show Map</h1>
+    <button id="showMapButton">Show Map</button>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+//ts
+// Define the coordinates
+const coordinates = { lat: 22.3964, lng: 114.1099 }; // Example: Central, Hong Kong
+
+// Function to initialize the map
+function initMap(): void {
+    const map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+        center: coordinates,
+        zoom: 14,
+    });
+
+    // Add a marker at the coordinates
+    new google.maps.Marker({
+        position: coordinates,
+        map: map,
+        title: "Central, Hong Kong",
+    });
+}
+
+// Set up the button click event to show the map
+document.getElementById("showMapButton")?.addEventListener("click", () => {
+    const mapDiv = document.getElementById("map") as HTMLElement;
+    mapDiv.style.display = "block"; // Show the map div
+    initMap(); // Initialize the map
+});
